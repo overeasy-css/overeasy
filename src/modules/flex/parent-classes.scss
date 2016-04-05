@@ -1,0 +1,19 @@
+
+.flex { display: flex }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex { display: flex } }
+@media (min-width: #{$breakpoint-md}) { .md-flex { display: flex } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex { display: flex } }
+
+.flex-column { flex-direction: column }
+
+.flex-start    { align-items: flex-start }
+.flex-end      { align-items: flex-end }
+.flex-center   { align-items: center }
+.flex-baseline { align-items: baseline }
+
+.flex-just-end     { justify-content: flex-end }
+.flex-just-center  { justify-content: center }
+.flex-just-between { justify-content: space-between }
+.flex-just-around  { justify-content: space-around }
+
+.flex-wrap   { flex-wrap: wrap }

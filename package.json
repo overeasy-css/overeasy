@@ -1,6 +1,6 @@
 {
   "name": "overeasy",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "A deliciously lightweight OOCSS grid and style framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,29 +24,9 @@
   },
   "homepage": "https://github.com/overeasy-css/overeasy",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4"
-  },
-  "dependencies": {
-    "overeasy-backgrounds": "^1.0.0",
-    "overeasy-bg-colors": "^1.0.0",
-    "overeasy-border-colors": "^1.0.0",
-    "overeasy-borders": "^1.0.0",
-    "overeasy-buttons": "^1.0.0",
-    "overeasy-config": "^1.0.0",
-    "overeasy-flex": "^1.0.0",
-    "overeasy-grid": "^1.0.0",
-    "overeasy-hover-bg-colors": "^1.0.0",
-    "overeasy-hover-border-colors": "^1.0.0",
-    "overeasy-hover-text-colors": "^1.0.0",
-    "overeasy-layout": "^1.0.0",
-    "overeasy-reset": "^1.0.0",
-    "overeasy-responsive": "^1.0.0",
-    "overeasy-text-colors": "^1.0.0",
-    "overeasy-typography-defaults": "^1.0.0",
-    "overeasy-typography-utilities": "^1.0.0",
-    "overeasy-whitespace": "^1.0.0"
+    "gulp-sass": "^2.2.0"
   }
 }

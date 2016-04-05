@@ -1,0 +1,33 @@
+
+.label {
+  font-weight: $font-weight-bold;
+}
+
+.field {
+  border-style: $input-border-style;
+  border-width: $input-border-width;
+  border-color: $input-border-color;
+  border-radius: $input-border-radius;
+  font-family: $input-font-family;
+  font-size: $input-font-size;
+  line-height: $input-line-height;
+  margin: $input-margin;
+  padding: $input-padding;
+  vertical-align: middle;
+  width: 100%;
+
+  &:focus,
+  &.focused {
+    outline: none;
+    border-color: $input-focus-color;
+    box-shadow: 0 0 0.35em 1px rgba($input-focus-color, 0.5);
+  }
+}
+
+.select {
+  @extend .field;
+  appearance: none;
+  background: $input-select-image no-repeat calc(100% - 0.5em);
+  background-size: 1em;
+  overflow: hidden;
+}

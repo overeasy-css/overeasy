@@ -1,0 +1,13 @@
+
+.bg-none { background: none }
+
+.bg-black { background-color: $color-base-black }
+.bg-white { background-color: $color-base-white }
+
+.hover-bg-black { &:hover { background-color: $color-base-black } }
+.hover-bg-white { &:hover { background-color: $color-base-white } }
+
+@each $color,$value in $color-palette {
+  .bg-#{$color} { background-color: $value }
+  .hover-bg-#{$color} { &:hover { background-color: $value } }
+}

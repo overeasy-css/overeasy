@@ -1,0 +1,13 @@
+
+table {
+    margin: $table-margin;
+
+    th {
+        font-weight: $table-head-weight;
+        padding: $table-cell-padding;
+    }
+
+    td {
+        padding: $table-cell-padding;
+    }
+}

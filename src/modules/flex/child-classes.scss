@@ -1,0 +1,14 @@
+
+.flex-first { order: -1 }
+.flex-last  { order: 1024 }
+
+.flex-shrink { flex: 0 1 auto }
+.flex-auto   { flex: 1 1 auto }
+.flex-grow   { flex: 1 0 auto }
+.flex-none   { flex: none }
+
+.flex-self-start    { align-self: flex-start }
+.flex-self-end      { align-self: flex-end }
+.flex-self-center   { align-self: center }
+.flex-self-baseline { align-self: baseline }
+.flex-self-stretch  { align-self: stretch }

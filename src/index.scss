@@ -1,0 +1,211 @@
+
+// *****************************************************************************
+// * OverEasy v4.0.0 (http://overeasycss.com)
+// * Created by Zach Saffrin (http://zachsaffrin.com)
+// *****************************************************************************
+
+// ***
+// If you make any changes, don't forget to 
+// run 'gulp' to recompile!
+// ***
+
+// Custom functions
+@import "./functions/color-functions";
+
+
+// **********************************************
+// * Settings 
+// **********************************************
+// Change what you want here, but I do not recommend 
+// removing anything. If you don't need something, 
+// just leave it alone. Some things might be dependent 
+// and unused variables won't be included in the compiled 
+// CSS anyway.
+
+
+// *** Color Settings ***
+$alpha-filter-low: 0.2;
+$alpha-filter-med: 0.5;
+$alpha-filter-high: 0.65;
+$color-base-black: #000;
+$color-base-white: #FFF;
+$color-mix-minor: 20%;
+$color-mix-major: 50%;
+$color-palette: (
+    'red': #B02121,
+    'yellow': #FFBE1A,
+    'green': #1E852F,
+    'blue': #344152,
+    'gray': #B3BBBC
+);
+
+// *** Grid layout ***
+$grid-columns: 12;
+$breakpoint-sm: 40em;
+$breakpoint-md: 52em;
+$breakpoint-lg: 64em;
+$container-width: $breakpoint-lg;
+
+// *** Spacing ***
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+// *** Font weights ***
+$font-weight-thin: 100; 
+$font-weight-light: 300; 
+$font-weight-normal: 400; 
+$font-weight-bold: 700;
+$font-weight-strong: 800;
+$font-weight-heavy: 900;
+
+// *** Body text ***
+$body-text-color: $color-base-black;
+$body-font-size: 1.1;    // Expressed as a factor of rem size. 1 = 1rem
+$body-line-height: 1.5;
+$body-font-family: 'Lato', 'Arial', Arial, sans-serif;
+$body-font-weight: $font-weight-normal;
+$faded-text-opacity: $alpha-filter-med;
+$p-margin-bottom: $space-2;
+$link-base-color: color-darker('red');
+$link-hover-color: color-dark('red');
+
+// *** Heading text ***
+$heading-font-family: $body-font-family;
+$heading-font-weight: $font-weight-bold;
+$heading-line-height: 1.25;
+$h1: (2rem * $body-font-size);
+$h2: (1.5rem * $body-font-size);
+$h3: (1.25rem * $body-font-size);
+$h4: (1rem * $body-font-size);
+$h5: (.875rem * $body-font-size);
+$h6: (.75rem * $body-font-size);
+$heading-margin-top: $space-2;
+$heading-margin-bottom: $space-1;
+
+// *** Lists ***
+$list-margin: 0 0 0 $space-2;
+$list-ordered-style: decimal;
+$list-unordered-style: disc;
+$sublist-ordered-style: lower-roman;
+$sublist-unordered-style: circle;
+$sublist-font-size: 80%;
+
+// *** Borders ***
+$border-style: solid;
+$border-width: 1px;
+$border-heavy-width: 3px;
+$border-radius: 5px;
+$border-color: get-color('gray');
+
+// *** Tables ***
+$table-margin: 0;
+$table-cell-padding: $space-1;
+$table-head-weight: $font-weight-bold;
+
+// *** Buttons ***
+$button-bg-color: color-dark('blue');
+$button-text-color: $color-base-white;
+$button-border: $border-width $border-style transparent;
+$button-border-radius: $border-radius; 
+$button-font-family: $body-font-family;
+$button-font-size: (.875rem * $body-font-size);
+$button-font-weight: $font-weight-bold;
+$button-line-height: 1.125;
+$button-padding-x: $space-2;
+$button-padding-y: $space-1;
+$button-hover-shade: $color-base-white;
+$button-hover-shade-alpha: $alpha-filter-low;
+$button-disabled-opacity: 0.3;
+
+// *** User Inputs ***
+$input-border-style: solid;
+$input-border-width: 1px;
+$input-border-color: color-light('gray');
+$input-border-radius: 0.25em;
+$input-font-family: $body-font-family;
+$input-font-size: 1rem;
+$input-label-font-family: $body-font-family;
+$input-label-font-weight: $font-weight-bold;
+$input-line-height: 1.75;
+$input-margin: 0;
+$input-padding: 0.25em 0.5em;
+$input-focus-color: get-color('blue');
+$input-select-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTk2IDk2TDAgMTkybDI1NiAyNTYgMjU2LTI1Ni05Ni05Ni0xNjAgMTYwTDk2IDk2eiIvPjwvc3ZnPg==");
+
+
+// **********************************************
+// * Module Imports
+// **********************************************
+// These you can feel free to remove or comment out 
+// if you don't want or need the settings/utilities 
+// contained within. The modules are separated by 
+// functionality so you can pick and choose or change 
+// your mind without stripping source code.
+
+
+// *** Base Reset ***
+@import "./modules/reset/reset";
+@import "./modules/reset/box-sizing";
+
+// *** Whitespace ***
+@import "./modules/whitespace/margins";
+@import "./modules/whitespace/padding";
+
+// *** Layout ***
+@import "./modules/layout/clearfix";
+@import "./modules/layout/content";
+@import "./modules/layout/display";
+@import "./modules/layout/overflow";
+@import "./modules/layout/position";
+@import "./modules/layout/responsive"; 
+@import "./modules/layout/sizing";
+
+// *** Grid ***
+@import "./modules/grid/grid";
+@import "./modules/grid/sm-grid";
+@import "./modules/grid/md-grid";
+@import "./modules/grid/lg-grid";
+
+// *** Flex ***
+@import "./modules/flex/parent-classes"; 
+@import "./modules/flex/child-classes"; 
+
+// *** Typography ***
+@import "./modules/typography/type-defaults";
+@import "./modules/typography/type-utilities";
+@import "./modules/typography/type-colors";
+@import "./modules/typography/type-color-variants";
+
+// *** Backgrounds ***
+@import "./modules/backgrounds/backgrounds"; 
+@import "./modules/backgrounds/background-colors";
+@import "./modules/backgrounds/background-color-variants";
+@import "./modules/backgrounds/background-alpha";
+
+// *** Borders ***
+@import "./modules/borders/borders";
+@import "./modules/borders/border-colors";
+@import "./modules/borders/border-color-variants"; 
+
+// *** Custom Formatting ***
+@import "./modules/formatting/buttons";
+@import "./modules/formatting/input-fields"; 
+@import "./modules/formatting/lists"; 
+@import "./modules/formatting/tables";  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
