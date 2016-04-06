@@ -1,7 +1,7 @@
 {
   "name": "overeasy",
   "version": "4.0.0",
-  "description": "A deliciously lightweight OOCSS grid and style framework",
+  "description": "A deliciously light and complete OOCSS grid and style framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
