@@ -172,6 +172,12 @@ $input-select-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWln
 @import "./modules/flex/parent-classes"; 
 @import "./modules/flex/child-classes"; 
 
+// *** Custom Formatting ***
+@import "./modules/formatting/buttons";
+@import "./modules/formatting/input-fields"; 
+@import "./modules/formatting/lists"; 
+@import "./modules/formatting/tables";  
+
 // *** Typography ***
 @import "./modules/typography/type-defaults";
 @import "./modules/typography/type-utilities";
@@ -189,11 +195,7 @@ $input-select-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWln
 @import "./modules/borders/border-colors";
 @import "./modules/borders/border-color-variants"; 
 
-// *** Custom Formatting ***
-@import "./modules/formatting/buttons";
-@import "./modules/formatting/input-fields"; 
-@import "./modules/formatting/lists"; 
-@import "./modules/formatting/tables";  
+
 
 
 
