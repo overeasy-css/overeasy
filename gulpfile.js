@@ -1,8 +1,7 @@
 var gulp       = require('gulp'),
     rename     = require('gulp-rename'),
     sass       = require('gulp-sass'),
-    prefixer   = require('gulp-autoprefixer'),
-    concat     = require('gulp-concat');
+    prefixer   = require('gulp-autoprefixer');
 
 var MODULES_DEST_DIR = './dist/modules',
     PACKAGES_DEST_DIR = './dist';
