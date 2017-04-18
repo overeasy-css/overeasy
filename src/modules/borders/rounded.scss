@@ -1,0 +1,6 @@
+
+// Real borders have curves
+.rounded { border-radius: $border-radius }
+.rounder { border-radius: ($border-radius * 2) }
+.round { border-radius: 50% }
+.unrounded { border-radius: 0 }

@@ -1,7 +1,7 @@
 {
   "name": "overeasy",
-  "version": "4.0.2",
-  "description": "A deliciously light and complete OOCSS grid and style framework",
+  "version": "5.0.0",
+  "description": "A deliciously flexible OOCSS layout and style framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,7 @@
     "scss",
     "gulp"
   ],
-  "author": "Zach Saffrin",
+  "author": "Zach Saffrin <zach@zachsaffrin.com> (http://zachsaffrin.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/overeasy-css/overeasy/issues"
@@ -25,8 +25,8 @@
   "homepage": "https://github.com/overeasy-css/overeasy",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^3.1.0"
   }
 }

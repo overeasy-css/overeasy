@@ -1,4 +1,19 @@
 
+// *** Colors ***
+$color-base-black: #000;
+$color-base-white: #FFF;
+$color-mix-minor: 20%;
+$color-mix-major: 50%;
+$color-palette: (
+    'red': #B02121,
+    'yellow': #FFBE1A,
+    'green': #1E852F,
+    'blue': #344152,
+    'gray': #B3BBBC
+);
+
+
+// *** Color Functions ***
 @function get-color($color-name) {
     $color: map-get($color-palette, $color-name);
 

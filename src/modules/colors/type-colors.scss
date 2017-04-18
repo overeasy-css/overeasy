@@ -10,6 +10,3 @@
   .#{$color} { color: $value }
   .hover-#{$color} { &:hover { color: $value } }
 }
-
-.faded { opacity: $faded-text-opacity }
-.opaque { opacity: 1 }
