@@ -569,6 +569,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.67em;
   margin-bottom: 0.67em; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 .m0 {
   margin: 0; }
 
