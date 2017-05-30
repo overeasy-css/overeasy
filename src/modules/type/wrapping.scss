@@ -1,0 +1,11 @@
+
+// Wrapping
+.nowrap     { white-space: nowrap }
+.break-word { word-wrap: break-word }
+.justify    { text-align: justify }
+.truncate   {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

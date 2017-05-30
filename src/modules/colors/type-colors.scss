@@ -1,0 +1,12 @@
+
+.color-inherit { color: inherit }
+
+.black { color: $color-base-black }
+.white { color: $color-base-white }
+.hover-black { &:hover { color: $color-base-black } }
+.hover-white { &:hover { color: $color-base-white } }
+
+@each $color,$value in $color-palette {
+  .#{$color} { color: $value }
+  .hover-#{$color} { &:hover { color: $value } }
+}
