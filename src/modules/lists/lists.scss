@@ -1,10 +1,20 @@
 
-ol { list-style: $list-ordered-style }
-ul { list-style: $list-unordered-style }
-ol, ul { 
-    margin: $list-margin;
+ol, ul {
+	&.no-style { 
+		display: inline;
+		list-style: none;
+		margin: 0;
 
-    &.no-style { list-style: none }
+		ol, ul, li { 
+			display: inline;
+			margin: 0; 
+		}
+	}
+}
+ol:not(.no-style) { list-style: $list-ordered-style }
+ul:not(.no-style) { list-style: $list-unordered-style }
+ol:not(.no-style), ul:not(.no-style) { 
+    margin: $list-margin;
 
     ol, ul {
         font-size: $sublist-font-size;

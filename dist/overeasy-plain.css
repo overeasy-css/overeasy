@@ -230,34 +230,34 @@ html {
 .col-12 {
   width: 100%; }
 
-@media (min-width: 54rem) {
-  .lg-col {
+@media (min-width: 30rem) {
+  .sm-col {
     float: left; }
-  .lg-col-right {
+  .sm-col-right {
     float: right; }
-  .lg-col-1 {
+  .sm-col-1 {
     width: 8.33333%; }
-  .lg-col-2 {
+  .sm-col-2 {
     width: 16.66667%; }
-  .lg-col-3 {
+  .sm-col-3 {
     width: 25%; }
-  .lg-col-4 {
+  .sm-col-4 {
     width: 33.33333%; }
-  .lg-col-5 {
+  .sm-col-5 {
     width: 41.66667%; }
-  .lg-col-6 {
+  .sm-col-6 {
     width: 50%; }
-  .lg-col-7 {
+  .sm-col-7 {
     width: 58.33333%; }
-  .lg-col-8 {
+  .sm-col-8 {
     width: 66.66667%; }
-  .lg-col-9 {
+  .sm-col-9 {
     width: 75%; }
-  .lg-col-10 {
+  .sm-col-10 {
     width: 83.33333%; }
-  .lg-col-11 {
+  .sm-col-11 {
     width: 91.66667%; }
-  .lg-col-12 {
+  .sm-col-12 {
     width: 100%; } }
 
 @media (min-width: 42rem) {
@@ -290,34 +290,34 @@ html {
   .md-col-12 {
     width: 100%; } }
 
-@media (min-width: 30rem) {
-  .sm-col {
+@media (min-width: 54rem) {
+  .lg-col {
     float: left; }
-  .sm-col-right {
+  .lg-col-right {
     float: right; }
-  .sm-col-1 {
+  .lg-col-1 {
     width: 8.33333%; }
-  .sm-col-2 {
+  .lg-col-2 {
     width: 16.66667%; }
-  .sm-col-3 {
+  .lg-col-3 {
     width: 25%; }
-  .sm-col-4 {
+  .lg-col-4 {
     width: 33.33333%; }
-  .sm-col-5 {
+  .lg-col-5 {
     width: 41.66667%; }
-  .sm-col-6 {
+  .lg-col-6 {
     width: 50%; }
-  .sm-col-7 {
+  .lg-col-7 {
     width: 58.33333%; }
-  .sm-col-8 {
+  .lg-col-8 {
     width: 66.66667%; }
-  .sm-col-9 {
+  .lg-col-9 {
     width: 75%; }
-  .sm-col-10 {
+  .lg-col-10 {
     width: 83.33333%; }
-  .sm-col-11 {
+  .lg-col-11 {
     width: 91.66667%; }
-  .sm-col-12 {
+  .lg-col-12 {
     width: 100%; } }
 
 .inline {
@@ -451,26 +451,35 @@ html {
 .half-vh {
   height: 50vh; }
 
-.min-vh {
+.min-full-height {
+  min-height: 100%; }
+
+.min-full-vh {
   min-height: 100vh; }
 
-ol {
+ol.no-style, ul.no-style {
+  display: inline;
+  list-style: none;
+  margin: 0; }
+  ol.no-style ol, ol.no-style ul, ol.no-style li, ul.no-style ol, ul.no-style ul, ul.no-style li {
+    display: inline;
+    margin: 0; }
+
+ol:not(.no-style) {
   list-style: decimal; }
 
-ul {
+ul:not(.no-style) {
   list-style: disc; }
 
-ol, ul {
+ol:not(.no-style), ul:not(.no-style) {
   margin: 0 0 0 1rem; }
-  ol.no-style, ul.no-style {
-    list-style: none; }
-  ol ol, ol ul, ul ol, ul ul {
+  ol:not(.no-style) ol, ol:not(.no-style) ul, ul:not(.no-style) ol, ul:not(.no-style) ul {
     font-size: 80%;
     margin-bottom: 0;
     margin-top: 0; }
-  ol ol, ul ol {
+  ol:not(.no-style) ol, ul:not(.no-style) ol {
     list-style: lower-roman; }
-  ol ul, ul ul {
+  ol:not(.no-style) ul, ul:not(.no-style) ul {
     list-style: circle; }
 
 .size-xs {
@@ -571,7 +580,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  cursor: pointer;
+  text-decoration: inherit; }
 
 .m0 {
   margin: 0; }
