@@ -33,12 +33,12 @@
 
 
 // Horizontal child alignment
-.flex-just-end     { justify-content: flex-end; }
+.flex-just-end { justify-content: flex-end; }
 @media (min-width: #{$breakpoint-sm}) { .sm-flex-just-end { justify-content: flex-end; } }
 @media (min-width: #{$breakpoint-md}) { .md-flex-just-end { justify-content: flex-end; } }
 @media (min-width: #{$breakpoint-lg}) { .lg-flex-just-end { justify-content: flex-end; } }
 
-.flex-just-center  { justify-content: center; }
+.flex-just-center { justify-content: center; }
 @media (min-width: #{$breakpoint-sm}) { .sm-flex-just-center { justify-content: center; } }
 @media (min-width: #{$breakpoint-md}) { .md-flex-just-center { justify-content: center; } }
 @media (min-width: #{$breakpoint-lg}) { .lg-flex-just-center { justify-content: center; } }
@@ -48,7 +48,7 @@
 @media (min-width: #{$breakpoint-md}) { .md-flex-just-between { justify-content: space-between; } }
 @media (min-width: #{$breakpoint-lg}) { .lg-flex-just-between { justify-content: space-between; } }
 
-.flex-just-around  { justify-content: space-around; }
+.flex-just-around { justify-content: space-around; }
 @media (min-width: #{$breakpoint-sm}) { .sm-flex-just-around { justify-content: space-around; } }
 @media (min-width: #{$breakpoint-md}) { .md-flex-just-around { justify-content: space-around; } }
 @media (min-width: #{$breakpoint-lg}) { .lg-flex-just-around { justify-content: space-around; } }
