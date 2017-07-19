@@ -1,13 +1,16 @@
 
-.clear:before,
-.clear:after {
-    content: ' ';
-    display: table;
-}
-.clear:after { clear: both }
+.clear {
+	&::before,
+	&::after {
+		content: ' ';
+		display: table;
+	}
 
-.container { 
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $container-width; 
+	&::after { clear: both; }
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $container-width;
 }

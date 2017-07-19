@@ -1,12 +1,13 @@
 
 .col {
-    float: left;
+	float: left;
 }
+
 .col-right {
-    float: right;
+	float: right;
 }
 @for $i from 1 through $grid-columns {
-    .col-#{$i} {
-        width: ($i/$grid-columns * 100%);
-    }
+	.col-#{$i} {
+		width: ($i/$grid-columns * 100%);
+	}
 }

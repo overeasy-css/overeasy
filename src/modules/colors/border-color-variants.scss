@@ -1,12 +1,12 @@
 
-@each $color,$value in $color-palette {
-  .border-#{$color}-lighter { border-color: color-lighter($color) }
-  .border-#{$color}-light { border-color: color-light($color) }
-  .border-#{$color}-dark { border-color: color-dark($color) }
-  .border-#{$color}-darker { border-color: color-darker($color) }
+@each $color, $value in $color-palette {
+	.border-#{$color}-lighter { border-color: color-lighter($color); }
+	.border-#{$color}-light { border-color: color-light($color); }
+	.border-#{$color}-dark { border-color: color-dark($color); }
+	.border-#{$color}-darker { border-color: color-darker($color); }
 
-  .hover-border-#{$color}-lighter { &:hover { border-color: color-lighter($color) } }
-  .hover-border-#{$color}-light { &:hover { border-color: color-light($color) } }
-  .hover-border-#{$color}-dark { &:hover { border-color: color-dark($color) } }
-  .hover-border-#{$color}-darker { &:hover { border-color: color-darker($color) } }
+	.hover-border-#{$color}-lighter { &:hover { border-color: color-lighter($color); } }
+	.hover-border-#{$color}-light { &:hover { border-color: color-light($color); } }
+	.hover-border-#{$color}-dark { &:hover { border-color: color-dark($color); } }
+	.hover-border-#{$color}-darker { &:hover { border-color: color-darker($color); } }
 }

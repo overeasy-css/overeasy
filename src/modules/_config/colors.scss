@@ -1,49 +1,49 @@
 
 // *** Colors ***
 $color-base-black: #000;
-$color-base-white: #FFF;
+$color-base-white: #fff;
 $color-mix-minor: 20%;
 $color-mix-major: 50%;
 $color-palette: (
-    'red': #B02121,
-    'yellow': #FFBE1A,
-    'green': #1E852F,
-    'blue': #344152,
-    'gray': #B3BBBC
+	'red': #b02121,
+	'yellow': #ffbe1a,
+	'green': #1e852f,
+	'blue': #344152,
+	'gray': #b3bbbc
 );
 
 
 // *** Color Functions ***
 @function get-color($color-name) {
-    $color: map-get($color-palette, $color-name);
+	$color: map-get($color-palette, $color-name);
 
-    @return $color;
+	@return $color;
 }
 
 @function color-light($color) {
-    $base-color: get-color($color);
-    $finished-color: mix($color-base-white, $base-color, $color-mix-minor);
+	$base-color: get-color($color);
+	$finished-color: mix($color-base-white, $base-color, $color-mix-minor);
 
-    @return $finished-color;
+	@return $finished-color;
 }
 
 @function color-lighter($color) {
-    $base-color: get-color($color);
-    $finished-color: mix($color-base-white, $base-color, $color-mix-major);
+	$base-color: get-color($color);
+	$finished-color: mix($color-base-white, $base-color, $color-mix-major);
 
-    @return $finished-color;
+	@return $finished-color;
 }
 
 @function color-dark($color) {
-    $base-color: get-color($color);
-    $finished-color: mix($color-base-black, $base-color, $color-mix-minor);
+	$base-color: get-color($color);
+	$finished-color: mix($color-base-black, $base-color, $color-mix-minor);
 
-    @return $finished-color;
+	@return $finished-color;
 }
 
 @function color-darker($color) {
-    $base-color: get-color($color);
-    $finished-color: mix($color-base-black, $base-color, $color-mix-major);
+	$base-color: get-color($color);
+	$finished-color: mix($color-base-black, $base-color, $color-mix-major);
 
-    @return $finished-color;
+	@return $finished-color;
 }
