@@ -1,14 +1,16 @@
 
-.border-black { border-color: $color-base-black }
-.border-white { border-color: $color-base-white }
-.border-transparent { border-color: rgba(0, 0, 0, 0) }
+$transparent: rgba(0, 0, 0, 0);
 
-.hover-border-black { &:hover { border-color: $color-base-black } }
-.hover-border-white { &:hover { border-color: $color-base-white } }
-.hover-border-transparent { &:hover { border-color: rgba(0, 0, 0, 0) } }
+.border-black { border-color: $color-base-black; }
+.border-white { border-color: $color-base-white; }
+.border-transparent { border-color: $transparent; }
+
+.hover-border-black { &:hover { border-color: $color-base-black; } }
+.hover-border-white { &:hover { border-color: $color-base-white; } }
+.hover-border-transparent { &:hover { border-color: $transparent; } }
 
 
-@each $color,$value in $color-palette {
-  .border-#{$color} { border-color: $value }
-  .hover-border-#{$color} { &:hover { border-color: $value } }
+@each $color, $value in $color-palette {
+	.border-#{$color} { border-color: $value; }
+	.hover-border-#{$color} { &:hover { border-color: $value; } }
 }

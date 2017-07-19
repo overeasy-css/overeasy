@@ -1,19 +1,61 @@
+// Container behavior
+.flex { display: flex; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex { display: flex; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex { display: flex; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex { display: flex; } }
 
-.flex { display: flex }
-@media (min-width: #{$breakpoint-sm}) { .sm-flex { display: flex } }
-@media (min-width: #{$breakpoint-md}) { .md-flex { display: flex } }
-@media (min-width: #{$breakpoint-lg}) { .lg-flex { display: flex } }
+.flex-column { flex-direction: column; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-column { flex-direction: column; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-column { flex-direction: column; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-column { flex-direction: column; } }
 
-.flex-column { flex-direction: column }
 
-.flex-start    { align-items: flex-start }
-.flex-end      { align-items: flex-end }
-.flex-center   { align-items: center }
-.flex-baseline { align-items: baseline }
+// Vertical child alignment
+.flex-start { align-items: flex-start; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-start { align-items: flex-start; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-start { align-items: flex-start; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-start { align-items: flex-start; } }
 
-.flex-just-end     { justify-content: flex-end }
-.flex-just-center  { justify-content: center }
-.flex-just-between { justify-content: space-between }
-.flex-just-around  { justify-content: space-around }
+.flex-end { align-items: flex-end; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-end { align-items: flex-end; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-end { align-items: flex-end; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-end { align-items: flex-end; } }
 
-.flex-wrap   { flex-wrap: wrap }
+.flex-center { align-items: center; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-center { align-items: center; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-center { align-items: center; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-center { align-items: center; } }
+
+.flex-baseline { align-items: baseline; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-baseline { align-items: baseline; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-baseline { align-items: baseline; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-baseline { align-items: baseline; } }
+
+
+// Horizontal child alignment
+.flex-justify-end { justify-content: flex-end; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-end { justify-content: flex-end; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-justify-end { justify-content: flex-end; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-end { justify-content: flex-end; } }
+
+.flex-justify-center { justify-content: center; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-center { justify-content: center; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-justify-center { justify-content: center; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-center { justify-content: center; } }
+
+.flex-justify-between { justify-content: space-between; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-between { justify-content: space-between; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-justify-between { justify-content: space-between; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-between { justify-content: space-between; } }
+
+.flex-justify-around { justify-content: space-around; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-around { justify-content: space-around; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-justify-around { justify-content: space-around; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-around { justify-content: space-around; } }
+
+
+// Wrapping
+.flex-wrap { flex-wrap: wrap; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-wrap { flex-wrap: wrap; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-wrap { flex-wrap: wrap; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-wrap { flex-wrap: wrap; } }

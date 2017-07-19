@@ -1,12 +1,12 @@
 
-@each $color,$value in $color-palette {
-  .#{$color}-lighter { color: color-lighter($color) }
-  .#{$color}-light { color: color-light($color) }
-  .#{$color}-dark { color: color-dark($color) }
-  .#{$color}-darker { color: color-darker($color) }
+@each $color, $value in $color-palette {
+	.#{$color}-lighter { color: color-lighter($color); }
+	.#{$color}-light { color: color-light($color); }
+	.#{$color}-dark { color: color-dark($color); }
+	.#{$color}-darker { color: color-darker($color); }
 
-  .hover-#{$color}-lighter { &:hover { color: color-lighter($color) } }
-  .hover-#{$color}-light { &:hover { color: color-light($color) } }
-  .hover-#{$color}-dark { &:hover { color: color-dark($color) } }
-  .hover-#{$color}-darker { &:hover { color: color-darker($color) } }
+	.hover-#{$color}-lighter { &:hover { color: color-lighter($color); } }
+	.hover-#{$color}-light { &:hover { color: color-light($color); } }
+	.hover-#{$color}-dark { &:hover { color: color-dark($color); } }
+	.hover-#{$color}-darker { &:hover { color: color-darker($color); } }
 }

@@ -1,26 +1,37 @@
 
-ol, ul {
-	&.no-style { 
+ol,
+ul {
+	&.no-style {
 		display: inline;
 		list-style: none;
 		margin: 0;
 
-		ol, ul, li { 
+		ol,
+		ul,
+		li {
 			display: inline;
-			margin: 0; 
+			margin: 0;
 		}
 	}
-}
-ol:not(.no-style) { list-style: $list-ordered-style }
-ul:not(.no-style) { list-style: $list-unordered-style }
-ol:not(.no-style), ul:not(.no-style) { 
-    margin: $list-margin;
 
-    ol, ul {
-        font-size: $sublist-font-size;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    ol { list-style: $sublist-ordered-style }
-    ul { list-style: $sublist-unordered-style }
+	&:not(.no-style) {
+		margin: $list-margin;
+
+		ol,
+		ul {
+			font-size: $sublist-font-size;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		ol { list-style: $sublist-ordered-style; }
+		ul { list-style: $sublist-unordered-style; }
+	}
+}
+
+ol {
+	&:not(.no-style) { list-style: $list-ordered-style; }
+}
+
+ul {
+	&:not(.no-style) { list-style: $list-unordered-style; }
 }

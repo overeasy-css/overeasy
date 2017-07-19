@@ -1,14 +1,59 @@
+// Ordering
+.flex-first { order: -1; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-first { order: -1; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-first { order: -1; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-first { order: -1; } }
 
-.flex-first { order: -1 }
-.flex-last  { order: 1024 }
+.flex-last { order: 1024; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-last { order: 1024; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-last { order: 1024; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-last { order: 1024; } }
 
-.flex-shrink { flex: 0 1 auto }
-.flex-auto   { flex: 1 1 auto }
-.flex-grow   { flex: 1 0 auto }
-.flex-none   { flex: none }
 
-.flex-self-start    { align-self: flex-start }
-.flex-self-end      { align-self: flex-end }
-.flex-self-center   { align-self: center }
-.flex-self-baseline { align-self: baseline }
-.flex-self-stretch  { align-self: stretch }
+// Horizontal size behavior
+.flex-shrink { flex: 0 1 auto; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-shrink { flex: 0 1 auto; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-shrink { flex: 0 1 auto; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-shrink { flex: 0 1 auto; } }
+
+.flex-auto { flex: 1 1 auto; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-auto { flex: 1 1 auto; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-auto { flex: 1 1 auto; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-auto { flex: 1 1 auto; } }
+
+.flex-grow { flex: 1 0 auto; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-grow { flex: 1 0 auto; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-grow { flex: 1 0 auto; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-grow { flex: 1 0 auto; } }
+
+.flex-none { flex: none; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-none { flex: none; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-none { flex: none; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-none { flex: none; } }
+
+
+// Vertical positioning
+.flex-self-start { align-self: flex-start; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-self-start { align-self: flex-start; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-self-start { align-self: flex-start; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-self-start { align-self: flex-start; } }
+
+.flex-self-end { align-self: flex-end; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-self-end { align-self: flex-end; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-self-end { align-self: flex-end; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-self-end { align-self: flex-end; } }
+
+.flex-self-center { align-self: center; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-self-center { align-self: center; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-self-center { align-self: center; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-self-center { align-self: center; } }
+
+.flex-self-baseline { align-self: baseline; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-self-baseline { align-self: baseline; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-self-baseline { align-self: baseline; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-self-baseline { align-self: baseline; } }
+
+.flex-self-stretch { align-self: stretch; }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-self-stretch { align-self: stretch; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-self-stretch { align-self: stretch; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-self-stretch { align-self: stretch; } }
