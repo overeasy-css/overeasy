@@ -29,6 +29,12 @@
 .pb4 { padding-bottom: $space-4; }
 .pl4 { padding-left:   $space-4; }
 
+.p5  { padding:        $space-5; }
+.pt5 { padding-top:    $space-5; }
+.pr5 { padding-right:  $space-5; }
+.pb5 { padding-bottom: $space-5; }
+.pl5 { padding-left:   $space-5; }
+
 
 .px1 {
 	padding-left: $space-1;
@@ -50,6 +56,11 @@
 	padding-right: $space-4;
 }
 
+.px5 {
+	padding-left: $space-5;
+	padding-right: $space-5;
+}
+
 
 .py1 {
 	padding-bottom: $space-1;
@@ -69,4 +80,9 @@
 .py4 {
 	padding-bottom: $space-4;
 	padding-top: $space-4;
+}
+
+.py5 {
+	padding-bottom: $space-5;
+	padding-top: $space-5;
 }

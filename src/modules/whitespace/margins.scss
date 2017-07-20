@@ -29,6 +29,12 @@
 .mb4 { margin-bottom: $space-4; }
 .ml4 { margin-left:   $space-4; }
 
+.m5  { margin:        $space-5; }
+.mt5 { margin-top:    $space-5; }
+.mr5 { margin-right:  $space-5; }
+.mb5 { margin-bottom: $space-5; }
+.ml5 { margin-left:   $space-5; }
+
 
 .mx1 {
 	margin-left: $space-1;
@@ -50,6 +56,11 @@
 	margin-right: $space-4;
 }
 
+.mx5 {
+	margin-left: $space-5;
+	margin-right: $space-5;
+}
+
 
 .my1 {
 	margin-bottom: $space-1;
@@ -69,6 +80,11 @@
 .my4 {
 	margin-bottom: $space-4;
 	margin-top: $space-4;
+}
+
+.my5 {
+	margin-bottom: $space-5;
+	margin-top: $space-5;
 }
 
 
