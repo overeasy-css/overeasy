@@ -5,6 +5,12 @@
 .pb0 { padding-bottom: 0; }
 .pl0 { padding-left:   0; }
 
+.p-thin  { padding:        1px; }
+.pt-thin { padding-top:    1px; }
+.pr-thin { padding-right:  1px; }
+.pb-thin { padding-bottom: 1px; }
+.pl-thin { padding-left:   1px; }
+
 .p1  { padding:        $space-1; }
 .pt1 { padding-top:    $space-1; }
 .pr1 { padding-right:  $space-1; }
