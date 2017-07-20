@@ -1,12 +1,47 @@
 
 // Wrapping
-.nowrap     { white-space: nowrap; }
-.break-word { word-wrap: break-word; }
-.justify    { text-align: justify; }
+.nowrap { white-space: nowrap; }
+@media (min-width: #{$breakpoint-sm}) { .sm-nowrap { white-space: nowrap; } }
+@media (min-width: #{$breakpoint-md}) { .md-nowrap { white-space: nowrap; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-nowrap { white-space: nowrap; } }
 
-.truncate   {
+.break-word { word-wrap: break-word; }
+@media (min-width: #{$breakpoint-sm}) { .sm-break-word { word-wrap: break-word; } }
+@media (min-width: #{$breakpoint-md}) { .md-break-word { word-wrap: break-word; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-break-word { word-wrap: break-word; } }
+
+.justify { text-align: justify; }
+@media (min-width: #{$breakpoint-sm}) { .sm-justify { text-align: justify; } }
+@media (min-width: #{$breakpoint-md}) { .md-justify { text-align: justify; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-justify { text-align: justify; } }
+
+.truncate {
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+@media (min-width: #{$breakpoint-sm}) {
+	.sm-truncate {
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+@media (min-width: #{$breakpoint-md}) {
+	.md-truncate {
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+@media (min-width: #{$breakpoint-lg}) {
+	.lg-truncate {
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 }
