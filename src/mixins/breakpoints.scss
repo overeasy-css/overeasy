@@ -1,0 +1,12 @@
+
+@mixin media-query($breakpoint) {
+	@if ($breakpoint > 0) {
+		@media (min-width: #{$breakpoint}) { @content }
+	} @else {
+		@content;
+	}
+}
+
+@function breakpoint-slug($breakpoint, $size) {
+	@return if($size > 0, '#{$breakpoint}-', '');
+}
