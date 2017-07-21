@@ -272,22 +272,22 @@ html {
 @media (min-width: 576px) {
   .sm-flex-justify-start {
     -ms-flex-pack: start;
-        justify-content: start; } }
+        justify-content: flex-start; } }
 
 @media (min-width: 768px) {
   .md-flex-justify-start {
     -ms-flex-pack: start;
-        justify-content: start; } }
+        justify-content: flex-start; } }
 
 @media (min-width: 992px) {
   .lg-flex-justify-start {
     -ms-flex-pack: start;
-        justify-content: start; } }
+        justify-content: flex-start; } }
 
 @media (min-width: 1200px) {
   .xl-flex-justify-start {
     -ms-flex-pack: start;
-        justify-content: start; } }
+        justify-content: flex-start; } }
 
 .flex-justify-end {
   -ms-flex-pack: end;

@@ -50,10 +50,10 @@
 
 // Horizontal child alignment
 .flex-justify-start { justify-content: flex-start; }
-@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-start { justify-content: start; } }
-@media (min-width: #{$breakpoint-md}) { .md-flex-justify-start { justify-content: start; } }
-@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-start { justify-content: start; } }
-@media (min-width: #{$breakpoint-xl}) { .xl-flex-justify-start { justify-content: start; } }
+@media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-start { justify-content: flex-start; } }
+@media (min-width: #{$breakpoint-md}) { .md-flex-justify-start { justify-content: flex-start; } }
+@media (min-width: #{$breakpoint-lg}) { .lg-flex-justify-start { justify-content: flex-start; } }
+@media (min-width: #{$breakpoint-xl}) { .xl-flex-justify-start { justify-content: flex-start; } }
 
 .flex-justify-end { justify-content: flex-end; }
 @media (min-width: #{$breakpoint-sm}) { .sm-flex-justify-end { justify-content: flex-end; } }
