@@ -1,0 +1,55 @@
+
+// Font size adjustments
+.size-xs  { font-size: 60%; }
+.size-sm  { font-size: 80%; }
+.size-lg  { font-size: 120%; }
+.size-xl  { font-size: 140%; }
+.size-xxl { font-size: 200%; }
+
+
+// Decoration
+.italic				{ font-style: italic; }
+.hover-italic	{ &:hover { font-style: italic; } }
+
+.underline 			 { text-decoration: underline; }
+.hover-underline { &:hover { text-decoration: underline; } }
+
+.caps 			{ text-transform: uppercase; }
+.hover-caps { &:hover { text-transform: uppercase; } }
+
+.no-decoration 			 { text-decoration: none; }
+.no-hover-decoration { &:hover { text-decoration: none; } }
+
+
+// Alignment
+@each $breakpoint, $size in $breakpoints {
+	@include media-query($size) {
+		$slug: breakpoint-slug($breakpoint, $size);
+
+		.#{$slug}left { text-align: left !important; }
+		.#{$slug}right { text-align: right !important; }
+		.#{$slug}center { text-align: center !important; }
+		.#{$slug}justify { text-align: justify !important; }
+
+		.#{$slug}v-middle { vertical-align: middle !important; }
+	}
+}
+
+
+// Wrapping
+@each $breakpoint, $size in $breakpoints {
+	@include media-query($size) {
+		$slug: breakpoint-slug($breakpoint, $size);
+
+		.#{$slug}wrap { white-space: normal !important; }
+		.#{$slug}nowrap { white-space: nowrap !important; }
+		.#{$slug}break-word { word-wrap: break-word !important; }
+
+		.#{$slug}truncate {
+			max-width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}

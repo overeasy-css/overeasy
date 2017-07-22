@@ -7,7 +7,3 @@
 		@content;
 	}
 }
-
-@function breakpoint-slug($breakpoint, $size) {
-	@return if($size > 0, '#{$breakpoint}-', '');
-}

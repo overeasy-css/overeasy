@@ -1,0 +1,90 @@
+
+// Display
+.inline       { display: inline !important; }
+.block        { display: block !important; }
+.inline-block { display: inline-block !important; }
+.display-none { display: none !important; }
+
+.hide {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	width: 1px !important;
+}
+
+
+// Clearfix
+// Use to wrap rows of floating grid elements
+.clear {
+	&::before,
+	&::after {
+		content: ' ';
+		display: table;
+	}
+
+	&::after { clear: both; }
+}
+
+
+// Container
+// Centered content wrapper
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $container-width;
+}
+
+
+// Overflow
+.overflow-hidden { overflow: hidden !important; }
+.overflow-scroll { overflow: scroll !important; }
+.overflow-auto   { overflow: auto !important; }
+
+.overflow-x-hidden { overflow-x: hidden !important; }
+.overflow-x-scroll { overflow-x: scroll !important; }
+.overflow-x-auto   { overflow-x: auto !important; }
+
+.overflow-y-hidden { overflow-y: hidden !important; }
+.overflow-y-scroll { overflow-y: scroll !important; }
+.overflow-y-auto   { overflow-y: auto !important; }
+
+
+// Position
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.fixed    { position: fixed !important; }
+
+.top-0    { top: 0; }
+.right-0  { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left: 0; }
+
+
+// Responsive visibility
+.sm-show,
+.md-show,
+.lg-show,
+.xl-show {
+	display: none !important;
+}
+@media (min-width: map-get($breakpoints, 'sm')) { .sm-show { display: block !important; } }
+@media (min-width: map-get($breakpoints, 'md')) { .md-show { display: block !important; } }
+@media (min-width: map-get($breakpoints, 'lg')) { .lg-show { display: block !important; } }
+@media (min-width: map-get($breakpoints, 'xl')) { .xl-show { display: block !important; } }
+
+@media (min-width: map-get($breakpoints, 'sm')) { .sm-hide { display: none !important; } }
+@media (min-width: map-get($breakpoints, 'md')) { .md-hide { display: none !important; } }
+@media (min-width: map-get($breakpoints, 'lg')) { .lg-hide { display: none !important; } }
+@media (min-width: map-get($breakpoints, 'xl')) { .xl-hide { display: none !important; } }
+
+
+// Sizing
+.full-vw { width: 100vw; }
+.half-vw { width: 50vw; }
+
+.full-vh { height: 100vh; }
+.half-vh { height: 50vh; }
+
+.min-full-height { min-height: 100%; }
+.min-full-vh { min-height: 100vh; }

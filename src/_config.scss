@@ -1,3 +1,19 @@
+// Table of Contents
+//
+// Borders
+// Breakpoints
+// Colors
+// Grid columns
+// Container
+//
+
+
+// Borders
+$border-style: solid;
+$border-width: 1px;
+$border-heavy-width: 3px;
+$border-radius: 5px;
+
 
 // Breakpoints
 $breakpoints: (
@@ -7,3 +23,56 @@ $breakpoints: (
 	lg: 992px,
 	xl: 1200px
 );
+
+
+// Colors
+$color-base-black: #000;
+$color-base-white: #fff;
+$color-mix-minor: 20%;
+$color-mix-major: 50%;
+$color-palette: (
+	'red': #b02121,
+	'yellow': #ffbe1a,
+	'green': #1e852f,
+	'blue': #344152,
+	'gray': #b3bbbc
+);
+
+
+// Grid columns
+$grid-columns: 12;
+
+
+// Container
+$container-width: map-get($breakpoints, 'lg');
+
+
+// Lists
+$list-margin: 0 0 0 1rem;
+$list-ordered-style: decimal;
+$list-unordered-style: disc;
+$sublist-ordered-style: lower-roman;
+$sublist-unordered-style: circle;
+$sublist-font-size: 80%;
+
+
+// Type defaults
+$base-line-height: 1.5;
+$heading-font-weight: bold;
+$heading-line-height: 1.25;
+$h1: 2rem;
+$h2: 1.5rem;
+$h3: 1.17rem;
+$h4: 1.12rem;
+$h5: .83rem;
+$h6: .75rem;
+$heading-margin-top: .67em;
+$heading-margin-bottom: .67em;
+
+
+// Spacing
+$space-1: .25rem;
+$space-2: .5rem;
+$space-3: 1rem;
+$space-4: 2rem;
+$space-5: 4rem;
