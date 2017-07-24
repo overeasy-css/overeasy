@@ -1,55 +1,16 @@
 
-// Normal borders
-.border {
-	border-style: $border-style !important;
-	border-width: $border-width !important;
-}
+$border-widths: (
+	'': $border-width,
+	-heavy: $border-heavy-width
+);
 
-.border-top {
-	border-top-style: $border-style !important;
-	border-top-width: $border-width !important;
-}
-
-.border-right {
-	border-right-style: $border-style !important;
-	border-right-width: $border-width !important;
-}
-
-.border-bottom {
-	border-bottom-style: $border-style !important;
-	border-bottom-width: $border-width !important;
-}
-
-.border-left {
-	border-left-style: $border-style !important;
-	border-left-width: $border-width !important;
-}
-
-
-// Heavy borders
-.border-heavy {
-	border-style: $border-style !important;
-	border-width: $border-heavy-width !important;
-}
-
-.border-heavy-top {
-	border-top-style: $border-style !important;
-	border-top-width: $border-heavy-width !important;
-}
-
-.border-heavy-right {
-	border-right-style: $border-style !important;
-	border-right-width: $border-heavy-width !important;
-}
-
-.border-heavy-bottom {
-	border-bottom-style: $border-style !important;
-	border-bottom-width: $border-heavy-width !important;
-}
-
-.border-heavy-left {
-	border-left-style: $border-style !important;
-	border-left-width: $border-heavy-width !important;
+@each $side, $abbr in $sides {
+	@each $type, $width in $border-widths {
+		.border#{$type}#{$side} {
+			border#{$side}-style: $border-style !important;
+			border#{$side}-width: $width !important;
+		}
+	}
 }
 
 
