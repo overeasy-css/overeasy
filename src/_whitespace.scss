@@ -4,14 +4,6 @@ $whitespace-types: (
 	padding: p
 );
 
-$sides: (
-	'': '',
-	-top: t,
-	-right: r,
-	-bottom: b,
-	-left: l
-);
-
 @each $space, $size in $spacing {
 	@each $type, $ref in $whitespace-types {
 		@each $side, $abbr in $sides {
