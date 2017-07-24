@@ -85,3 +85,12 @@ $spacing: (
 	4: 2rem,
 	5: 4rem
 );
+
+// Element side references
+$sides: (
+	'': '',
+	-top: t,
+	-right: r,
+	-bottom: b,
+	-left: l
+);
