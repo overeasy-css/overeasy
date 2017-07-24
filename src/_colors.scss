@@ -1,0 +1,71 @@
+
+// Type colors
+.color-inherit { color: inherit !important; }
+
+.black { color: $color-base-black !important; }
+.white { color: $color-base-white !important; }
+.hover-black { &:hover { color: $color-base-black !important; } }
+.hover-white { &:hover { color: $color-base-white !important; } }
+
+@each $color, $value in $color-palette {
+	.#{$color} { color: $value !important; }
+	.#{$color}-lighter { color: color-lighter($color) !important; }
+	.#{$color}-light { color: color-light($color) !important; }
+	.#{$color}-dark { color: color-dark($color) !important; }
+	.#{$color}-darker { color: color-darker($color) !important; }
+
+	.hover-#{$color} { &:hover { color: $value !important; } }
+	.hover-#{$color}-lighter { &:hover { color: color-lighter($color) !important; } }
+	.hover-#{$color}-light { &:hover { color: color-light($color) !important; } }
+	.hover-#{$color}-dark { &:hover { color: color-dark($color) !important; } }
+	.hover-#{$color}-darker { &:hover { color: color-darker($color) !important; } }
+}
+
+// Background colors
+.bg-none { background: none; }
+
+.bg-black { background-color: $color-base-black !important; }
+.bg-white { background-color: $color-base-white !important; }
+
+.hover-bg-black { &:hover { background-color: $color-base-black !important; } }
+.hover-bg-white { &:hover { background-color: $color-base-white !important; } }
+
+@each $color, $value in $color-palette {
+	.bg-#{$color} { background-color: $value !important; }
+	.bg-#{$color}-lighter { background-color: color-lighter($color) !important; }
+	.bg-#{$color}-light { background-color: color-light($color) !important; }
+	.bg-#{$color}-dark { background-color: color-dark($color) !important; }
+	.bg-#{$color}-darker { background-color: color-darker($color) !important; }
+
+	.hover-bg-#{$color} { &:hover { background-color: $value !important; } }
+	.hover-bg-#{$color}-lighter { &:hover { background-color: color-lighter($color) !important; } }
+	.hover-bg-#{$color}-light { &:hover { background-color: color-light($color) !important; } }
+	.hover-bg-#{$color}-dark { &:hover { background-color: color-dark($color) !important; } }
+	.hover-bg-#{$color}-darker { &:hover { background-color: color-darker($color) !important; } }
+}
+
+// Border colors
+$transparent: rgba(0, 0, 0, 0);
+
+.border-black { border-color: $color-base-black !important; }
+.border-white { border-color: $color-base-white !important; }
+.border-transparent { border-color: $transparent !important; }
+
+.hover-border-black { &:hover { border-color: $color-base-black !important; } }
+.hover-border-white { &:hover { border-color: $color-base-white !important; } }
+.hover-border-transparent { &:hover { border-color: $transparent !important; } }
+
+
+@each $color, $value in $color-palette {
+	.border-#{$color} { border-color: $value !important; }
+	.border-#{$color}-lighter { border-color: color-lighter($color) !important; }
+	.border-#{$color}-light { border-color: color-light($color) !important; }
+	.border-#{$color}-dark { border-color: color-dark($color) !important; }
+	.border-#{$color}-darker { border-color: color-darker($color) !important; }
+
+	.hover-border-#{$color} { &:hover { border-color: $value !important; } }
+	.hover-border-#{$color}-lighter { &:hover { border-color: color-lighter($color) !important; } }
+	.hover-border-#{$color}-light { &:hover { border-color: color-light($color) !important; } }
+	.hover-border-#{$color}-dark { &:hover { border-color: color-dark($color) !important; } }
+	.hover-border-#{$color}-darker { &:hover { border-color: color-darker($color) !important; } }
+}

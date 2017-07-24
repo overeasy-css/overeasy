@@ -1,0 +1,23 @@
+
+$whitespace-types: (
+	margin: m,
+	padding: p
+);
+
+@each $space, $size in $spacing {
+	@each $type, $ref in $whitespace-types {
+		@each $side, $abbr in $sides {
+			.#{$ref}#{$abbr}#{$space} { #{$type}#{$side}: $size !important; }
+		}
+
+		.#{$ref}x#{$space} {
+			#{$type}-left: $size !important;
+			#{$type}-right: $size !important;
+		}
+
+		.#{$ref}y#{$space} {
+			#{$type}-bottom: $size !important;
+			#{$type}-top: $size !important;
+		}
+	}
+}

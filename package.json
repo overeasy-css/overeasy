@@ -1,6 +1,6 @@
 {
   "name": "overeasy",
-  "version": "5.2.2",
+  "version": "5.3.0",
   "description": "A deliciously flexible OOCSS layout and style framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

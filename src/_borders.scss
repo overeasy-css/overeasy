@@ -1,0 +1,25 @@
+
+$border-widths: (
+	'': $border-width,
+	-heavy: $border-heavy-width
+);
+
+@each $side, $abbr in $sides {
+	@each $type, $width in $border-widths {
+		.border#{$type}#{$side} {
+			border#{$side}-style: $border-style !important;
+			border#{$side}-width: $width !important;
+		}
+	}
+}
+
+
+// No borders. At all. Whatsoever.
+.border-none { border: 0 !important; }
+
+
+// Real borders have curves
+.rounded { border-radius: $border-radius !important; }
+.rounder { border-radius: ($border-radius * 2) !important; }
+.round { border-radius: 50%; }
+.unrounded { border-radius: 0; }

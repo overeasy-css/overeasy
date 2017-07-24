@@ -1,0 +1,96 @@
+// Table of Contents
+//
+// Borders
+// Breakpoints
+// Colors
+// Grid columns
+// Container
+// Lists
+// Type defaults
+// Spacing
+//
+
+
+// Borders
+$border-style: solid;
+$border-width: 1px;
+$border-heavy-width: 3px;
+$border-radius: 5px;
+
+
+// Breakpoints
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+
+// Colors
+$color-base-black: #000;
+$color-base-white: #fff;
+$color-mix-minor: 20%;
+$color-mix-major: 50%;
+$color-palette: (
+	'red': #b02121,
+	'yellow': #ffbe1a,
+	'green': #1e852f,
+	'blue': #344152,
+	'gray': #b3bbbc
+);
+
+
+// Grid columns
+$grid-columns: 12;
+
+
+// Container
+$container-width: map-get($breakpoints, 'lg');
+
+
+// Lists
+$list-margin: 0 0 0 1rem;
+$list-ordered-style: decimal;
+$list-unordered-style: disc;
+$sublist-ordered-style: lower-roman;
+$sublist-unordered-style: circle;
+$sublist-font-size: 80%;
+
+
+// Type defaults
+$base-line-height: 1.5;
+$heading-font-weight: bold;
+$heading-line-height: 1.25;
+$heading-sizes: (
+	h1: 2rem,
+	h2: 1.5rem,
+	h3: 1.17rem,
+	h4: 1.12rem,
+	h5: .83rem,
+	h6: .75rem
+);
+$heading-margin-top: .67em;
+$heading-margin-bottom: .67em;
+
+
+// Spacing
+$spacing: (
+	0: 0,
+	-thin: 1px,
+	1: .25rem,
+	2: .5rem,
+	3: 1rem,
+	4: 2rem,
+	5: 4rem
+);
+
+// Element side references
+$sides: (
+	'': '',
+	-top: t,
+	-right: r,
+	-bottom: b,
+	-left: l
+);

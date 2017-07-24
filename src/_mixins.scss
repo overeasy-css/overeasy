@@ -1,0 +1,9 @@
+
+// Breakpoints
+@mixin media-query($breakpoint) {
+	@if ($breakpoint > 0) {
+		@media (min-width: #{$breakpoint}) { @content }
+	} @else {
+		@content;
+	}
+}

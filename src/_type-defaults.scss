@@ -1,0 +1,28 @@
+
+// Root settings
+:root {
+	line-height: $base-line-height;
+}
+
+
+// Headings
+@each $heading, $size in $heading-sizes {
+	#{$heading} {
+		margin-bottom: $heading-margin-bottom;
+		margin-top: $heading-margin-top;
+	}
+
+	#{$heading}, .#{$heading} {
+		font-size: $size;
+		font-weight: $heading-font-weight;
+		line-height: $heading-line-height;
+	}
+}
+
+
+// Links
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: inherit;
+}

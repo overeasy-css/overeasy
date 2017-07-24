@@ -1,0 +1,16 @@
+
+// Grid
+@each $breakpoint, $size in $breakpoints {
+	@include media-query($size) {
+		$slug: breakpoint-slug($breakpoint, $size);
+
+		.#{$slug}col { float: left; }
+		.#{$slug}col-right { float: right; }
+
+		@for $i from 1 through $grid-columns {
+			.#{$slug}col-#{$i} {
+				width: ($i / $grid-columns * 100%);
+			}
+		}
+	}
+}
