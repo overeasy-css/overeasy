@@ -32,37 +32,37 @@ html {
   border-style: solid !important;
   border-width: 1px !important; }
 
-.border-top {
-  border-top-style: solid !important;
-  border-top-width: 1px !important; }
-
-.border-right {
-  border-right-style: solid !important;
-  border-right-width: 1px !important; }
-
-.border-bottom {
-  border-bottom-style: solid !important;
-  border-bottom-width: 1px !important; }
-
-.border-left {
-  border-left-style: solid !important;
-  border-left-width: 1px !important; }
-
 .border-heavy {
   border-style: solid !important;
   border-width: 3px !important; }
+
+.border-top {
+  border-top-style: solid !important;
+  border-top-width: 1px !important; }
 
 .border-heavy-top {
   border-top-style: solid !important;
   border-top-width: 3px !important; }
 
+.border-right {
+  border-right-style: solid !important;
+  border-right-width: 1px !important; }
+
 .border-heavy-right {
   border-right-style: solid !important;
   border-right-width: 3px !important; }
 
+.border-bottom {
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important; }
+
 .border-heavy-bottom {
   border-bottom-style: solid !important;
   border-bottom-width: 3px !important; }
+
+.border-left {
+  border-left-style: solid !important;
+  border-left-width: 1px !important; }
 
 .border-heavy-left {
   border-left-style: solid !important;
