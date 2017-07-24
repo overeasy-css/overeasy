@@ -222,124 +222,124 @@ html {
   border-color: #b3bbbc !important; }
 
 .red-lighter {
-  color: #d89090 !important; }
-
-.red-light {
-  color: #c04d4d !important; }
-
-.red-dark {
-  color: #8d1a1a !important; }
-
-.red-darker {
-  color: #581111 !important; }
+  color: color-lighter"red" !important; }
 
 .hover-red-lighter:hover {
-  color: #d89090 !important; }
+  color: color-lighter"red" !important; }
+
+.red-light {
+  color: color-light"red" !important; }
 
 .hover-red-light:hover {
-  color: #c04d4d !important; }
+  color: color-light"red" !important; }
+
+.red-dark {
+  color: color-dark"red" !important; }
 
 .hover-red-dark:hover {
-  color: #8d1a1a !important; }
+  color: color-dark"red" !important; }
+
+.red-darker {
+  color: color-darker"red" !important; }
 
 .hover-red-darker:hover {
-  color: #581111 !important; }
+  color: color-darker"red" !important; }
 
 .yellow-lighter {
-  color: #ffdf8d !important; }
-
-.yellow-light {
-  color: #ffcb48 !important; }
-
-.yellow-dark {
-  color: #cc9815 !important; }
-
-.yellow-darker {
-  color: #805f0d !important; }
+  color: color-lighter"yellow" !important; }
 
 .hover-yellow-lighter:hover {
-  color: #ffdf8d !important; }
+  color: color-lighter"yellow" !important; }
+
+.yellow-light {
+  color: color-light"yellow" !important; }
 
 .hover-yellow-light:hover {
-  color: #ffcb48 !important; }
+  color: color-light"yellow" !important; }
+
+.yellow-dark {
+  color: color-dark"yellow" !important; }
 
 .hover-yellow-dark:hover {
-  color: #cc9815 !important; }
+  color: color-dark"yellow" !important; }
+
+.yellow-darker {
+  color: color-darker"yellow" !important; }
 
 .hover-yellow-darker:hover {
-  color: #805f0d !important; }
+  color: color-darker"yellow" !important; }
 
 .green-lighter {
-  color: #8fc297 !important; }
-
-.green-light {
-  color: #4b9d59 !important; }
-
-.green-dark {
-  color: #186a26 !important; }
-
-.green-darker {
-  color: #0f4318 !important; }
+  color: color-lighter"green" !important; }
 
 .hover-green-lighter:hover {
-  color: #8fc297 !important; }
+  color: color-lighter"green" !important; }
+
+.green-light {
+  color: color-light"green" !important; }
 
 .hover-green-light:hover {
-  color: #4b9d59 !important; }
+  color: color-light"green" !important; }
+
+.green-dark {
+  color: color-dark"green" !important; }
 
 .hover-green-dark:hover {
-  color: #186a26 !important; }
+  color: color-dark"green" !important; }
+
+.green-darker {
+  color: color-darker"green" !important; }
 
 .hover-green-darker:hover {
-  color: #0f4318 !important; }
+  color: color-darker"green" !important; }
 
 .blue-lighter {
-  color: #9aa0a9 !important; }
-
-.blue-light {
-  color: #5d6775 !important; }
-
-.blue-dark {
-  color: #2a3442 !important; }
-
-.blue-darker {
-  color: #1a2129 !important; }
+  color: color-lighter"blue" !important; }
 
 .hover-blue-lighter:hover {
-  color: #9aa0a9 !important; }
+  color: color-lighter"blue" !important; }
+
+.blue-light {
+  color: color-light"blue" !important; }
 
 .hover-blue-light:hover {
-  color: #5d6775 !important; }
+  color: color-light"blue" !important; }
+
+.blue-dark {
+  color: color-dark"blue" !important; }
 
 .hover-blue-dark:hover {
-  color: #2a3442 !important; }
+  color: color-dark"blue" !important; }
+
+.blue-darker {
+  color: color-darker"blue" !important; }
 
 .hover-blue-darker:hover {
-  color: #1a2129 !important; }
+  color: color-darker"blue" !important; }
 
 .gray-lighter {
-  color: #d9ddde !important; }
-
-.gray-light {
-  color: #c2c9c9 !important; }
-
-.gray-dark {
-  color: #8f9696 !important; }
-
-.gray-darker {
-  color: #5a5e5e !important; }
+  color: color-lighter"gray" !important; }
 
 .hover-gray-lighter:hover {
-  color: #d9ddde !important; }
+  color: color-lighter"gray" !important; }
+
+.gray-light {
+  color: color-light"gray" !important; }
 
 .hover-gray-light:hover {
-  color: #c2c9c9 !important; }
+  color: color-light"gray" !important; }
+
+.gray-dark {
+  color: color-dark"gray" !important; }
 
 .hover-gray-dark:hover {
-  color: #8f9696 !important; }
+  color: color-dark"gray" !important; }
+
+.gray-darker {
+  color: color-darker"gray" !important; }
 
 .hover-gray-darker:hover {
-  color: #5a5e5e !important; }
+  color: color-darker"gray" !important; }
 
 .bg-red-lighter {
   background-color: #d89090 !important; }

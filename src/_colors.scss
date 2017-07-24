@@ -1,8 +1,4 @@
 
-//
-// *** Palette colors ***
-//
-
 // Type colors
 .color-inherit { color: inherit !important; }
 
@@ -13,7 +9,16 @@
 
 @each $color, $value in $color-palette {
 	.#{$color} { color: $value !important; }
+	.#{$color}-lighter { color: color-lighter($color) !important; }
+	.#{$color}-light { color: color-light($color) !important; }
+	.#{$color}-dark { color: color-dark($color) !important; }
+	.#{$color}-darker { color: color-darker($color) !important; }
+
 	.hover-#{$color} { &:hover { color: $value !important; } }
+	.hover-#{$color}-lighter { &:hover { color: color-lighter($color) !important; } }
+	.hover-#{$color}-light { &:hover { color: color-light($color) !important; } }
+	.hover-#{$color}-dark { &:hover { color: color-dark($color) !important; } }
+	.hover-#{$color}-darker { &:hover { color: color-darker($color) !important; } }
 }
 
 // Background colors
@@ -27,7 +32,16 @@
 
 @each $color, $value in $color-palette {
 	.bg-#{$color} { background-color: $value !important; }
+	.bg-#{$color}-lighter { background-color: color-lighter($color) !important; }
+	.bg-#{$color}-light { background-color: color-light($color) !important; }
+	.bg-#{$color}-dark { background-color: color-dark($color) !important; }
+	.bg-#{$color}-darker { background-color: color-darker($color) !important; }
+
 	.hover-bg-#{$color} { &:hover { background-color: $value !important; } }
+	.hover-bg-#{$color}-lighter { &:hover { background-color: color-lighter($color) !important; } }
+	.hover-bg-#{$color}-light { &:hover { background-color: color-light($color) !important; } }
+	.hover-bg-#{$color}-dark { &:hover { background-color: color-dark($color) !important; } }
+	.hover-bg-#{$color}-darker { &:hover { background-color: color-darker($color) !important; } }
 }
 
 // Border colors
@@ -44,47 +58,12 @@ $transparent: rgba(0, 0, 0, 0);
 
 @each $color, $value in $color-palette {
 	.border-#{$color} { border-color: $value !important; }
-	.hover-border-#{$color} { &:hover { border-color: $value !important; } }
-}
-
-
-//
-// *** Variant colors ***
-//
-
-// Type color variants
-@each $color, $value in $color-palette {
-	.#{$color}-lighter { color: color-lighter($color) !important; }
-	.#{$color}-light { color: color-light($color) !important; }
-	.#{$color}-dark { color: color-dark($color) !important; }
-	.#{$color}-darker { color: color-darker($color) !important; }
-
-	.hover-#{$color}-lighter { &:hover { color: color-lighter($color) !important; } }
-	.hover-#{$color}-light { &:hover { color: color-light($color) !important; } }
-	.hover-#{$color}-dark { &:hover { color: color-dark($color) !important; } }
-	.hover-#{$color}-darker { &:hover { color: color-darker($color) !important; } }
-}
-
-// Background color variants
-@each $color, $value in $color-palette {
-	.bg-#{$color}-lighter { background-color: color-lighter($color) !important; }
-	.bg-#{$color}-light { background-color: color-light($color) !important; }
-	.bg-#{$color}-dark { background-color: color-dark($color) !important; }
-	.bg-#{$color}-darker { background-color: color-darker($color) !important; }
-
-	.hover-bg-#{$color}-lighter { &:hover { background-color: color-lighter($color) !important; } }
-	.hover-bg-#{$color}-light { &:hover { background-color: color-light($color) !important; } }
-	.hover-bg-#{$color}-dark { &:hover { background-color: color-dark($color) !important; } }
-	.hover-bg-#{$color}-darker { &:hover { background-color: color-darker($color) !important; } }
-}
-
-// Border color variants
-@each $color, $value in $color-palette {
 	.border-#{$color}-lighter { border-color: color-lighter($color) !important; }
 	.border-#{$color}-light { border-color: color-light($color) !important; }
 	.border-#{$color}-dark { border-color: color-dark($color) !important; }
 	.border-#{$color}-darker { border-color: color-darker($color) !important; }
 
+	.hover-border-#{$color} { &:hover { border-color: $value !important; } }
 	.hover-border-#{$color}-lighter { &:hover { border-color: color-lighter($color) !important; } }
 	.hover-border-#{$color}-light { &:hover { border-color: color-light($color) !important; } }
 	.hover-border-#{$color}-dark { &:hover { border-color: color-dark($color) !important; } }
